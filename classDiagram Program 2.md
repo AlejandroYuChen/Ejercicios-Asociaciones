@@ -44,5 +44,5 @@ classDiagram
     AgenciaRenta o-- Auto
     AgenciaRenta o-- Cliente
     Auto --> Contrato
-    Cliente --> Contrato
+    Contrato o-- Cliente
 ```
