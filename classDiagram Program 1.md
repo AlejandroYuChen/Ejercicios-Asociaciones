@@ -1,3 +1,5 @@
+```mermaid
+
 classDiagram
 
     class Habitacion {
@@ -35,3 +37,4 @@ classDiagram
 
     Hotel *-- Habitacion
     Hotel o-- Cliente
+```
