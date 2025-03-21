@@ -4,7 +4,7 @@ classDiagram
         - string nombre
         - string modelo
         - bool disponible
-        + Auto(string p, string m)
+        + Auto(string, string)
         + ~Auto
         + string getPlaca() const
         + string getModelo()
@@ -16,7 +16,7 @@ classDiagram
     class Cliente {
         - int id
         - string nombre
-        + Cliente(int i,string n)
+        + Cliente(int,string)
         + ~Cliente() 
         + int getId() const
     }
@@ -25,7 +25,7 @@ classDiagram
         - Cliente* cliente
         - Auto* rentado
         - int dias
-        + Contrato(Cliente* c, Auto* a, int d)
+        + Contrato(Cliente*, Auto*, int)
         + ~Contrato()
     }
 
@@ -33,7 +33,7 @@ classDiagram
         - string nombre
         - vector<Auto*> autos
         - vector<Cliente*> clientes
-        + AgenciaRenta(string n)
+        + AgenciaRenta(string)
         + ~AgenciaRenta()
         + void agregarAuto(Auto* autoPtr)
         + void agregarCliente(Cliente* clientePtr)
