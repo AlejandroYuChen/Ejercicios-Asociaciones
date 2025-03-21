@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class Auto {
         - string nombre
@@ -43,3 +44,4 @@ classDiagram
     AgenciaRenta o-- Cliente
     Auto --> Contrato
     Cliente --> Contrato
+```
